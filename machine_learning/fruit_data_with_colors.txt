@@ -1,1 +1,1 @@
-1	apple	granny_smith	192	8.4	7.3	0.55
+1,apple,2,3,4
