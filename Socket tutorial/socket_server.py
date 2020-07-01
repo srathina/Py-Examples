@@ -5,6 +5,7 @@ print("Hello - I am Server")
 
 PORT = 5050
 SERVER = socket.gethostbyname(socket.gethostname())
+print(socket.gethostname())
 print(SERVER)
 HOST = (SERVER, PORT)
 print(HOST)
