@@ -1,0 +1,24 @@
+[
+	{
+		"name": "rsk",
+		"no": 1234,
+		"salary": 3000,
+		"is_manager": true,
+		"provident_fund": 
+		{
+			"epf": [1000,2000,3000,4000],
+			"vpf": [1000,2000,3000,4000]
+		}
+	},
+	{
+		"name": "anitha",
+		"no": 5678,
+		"salary": 2000,
+		"is_manager": false,
+		"provident_fund": 
+		{
+			"epf": [1000,2000,3000,4000],
+			"vpf": [1000,2000,3000,4000]
+		}
+	}
+]

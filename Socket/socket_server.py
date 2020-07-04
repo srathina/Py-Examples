@@ -5,6 +5,7 @@ print("Hello - I am Server")
 
 PORT = 5050
 SERVER = socket.gethostbyname(socket.gethostname())
+#SERVER = '65.52.227.51'
 print(socket.gethostname())
 print(SERVER)
 HOST = (SERVER, PORT)
@@ -17,10 +18,10 @@ conn, addr = server.accept()
 
 
 while True:
-    data = conn.recv(1024)
+    data = conn.recv(2048)
     print(data)
     if data:
-        conn.send(b"Received")
+        conn.send(b"Received everything")
         break
 
 
