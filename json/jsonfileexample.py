@@ -19,4 +19,3 @@ for item in data:
 #convert python string back to json and print it
 with open('new_employee_db.json', 'w') as f:
 	json.dump(data,f,indent = 2)
-	
