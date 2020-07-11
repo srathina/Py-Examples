@@ -5,14 +5,14 @@ f = open("Address.txt")
 text = f.read()
 f.close()
 print(text)
-print("\n")
+print("")
 
 #open the file using with keyword where we dont need to call file close 
 #explicity as python does that for us.
 with open("Address.txt") as fobj:
 	text = fobj.read()
 print(text)
-print("\n")
+print("")
 
 #using try and except method when try to open the file that is not available.
 try:
@@ -22,7 +22,7 @@ try:
 except:
 	print("FileNotFound")
 
-print("\n")
+print("")
 
 #file write
 Oceans = ['pacific', 'artic', 'antartic', 'indian', 'southern']
