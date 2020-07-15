@@ -1,0 +1,10 @@
+family:
+  - Person1:
+      name: "rsk"
+      age: 39
+  - Person2:
+      name: "anitha"
+      age: 38
+  - Person3:
+      name: "tanish"
+      age: 7
