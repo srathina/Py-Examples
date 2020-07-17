@@ -1,13 +1,19 @@
+import time
 
 #directly open the file, read and print it
 #by default file open as read only.
 f = open("Address.txt")
-text = f.read()
+while True:
+    text = f.readline().strip('\n')
+    print(text)
+    if text == "":
+        break
+
 f.close()
-print(text)
+
 print("")
 
-#open the file using with keyword where we dont need to call file close 
+#open the file using with keyword where we dont need to call file close
 #explicity as python does that for us.
 with open("Address.txt") as fobj:
 	text = fobj.read()
@@ -35,4 +41,4 @@ with open("oceans.txt", "w") as f:
 #another way to write the files using print with file paramter
 #another way to open the file using append method to append the content.
 with open("oceans.txt","a") as f:
-	print("There are 5 oceans", file=f)
+	print(f'There are {len(Oceans)} oceans', file=f)

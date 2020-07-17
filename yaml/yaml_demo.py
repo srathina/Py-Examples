@@ -7,6 +7,8 @@ print(data)
 with open("yaml_write_demo.yml","w") as w:
 	yaml.dump(data,w)
 
+
+
 data1 = '''
 name: RSK
 age: 39
