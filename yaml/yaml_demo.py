@@ -10,7 +10,7 @@ with open("yaml_write_demo.yml","w") as w:
 
 
 data1 = '''
-name: RSK
+name: Anitha
 age: 39
 '''
 a = yaml.load(data1, Loader=yaml.Loader)
