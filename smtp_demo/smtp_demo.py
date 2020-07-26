@@ -1,10 +1,16 @@
 import smtplib
 
+#Get the details
+s1 = input("Enter sender email:")
+r1 = input("Enter receiver email:")
+sub = input("Enter subject:")
+msg = input("Enter email message:")
+
 #email constraints
-sender = "mailtorsaravan@gmail.com"
-receiver = "mailtorsaravan@gmail.com"
-subject = "Hello, world !"
-msg = "I am RSK"
+sender = s1 #"mailtorsaravan@gmail.com"
+receiver = r1 #"mailtorsaravan@gmail.com"
+subject = sub #"Hello, world !"
+msg = msg #"I am RSK"
 
 #Subject: string is very important as that will place the subject content into subject field of the email
 email = f'Subject: {subject}\n\n{msg}'
