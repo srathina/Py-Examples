@@ -3,7 +3,7 @@ import samsungtvws
 #Connect the tv and get the token
 tvr = samsungtvws.SamsungTVWS(host = '192.168.1.67', port = 8002, token_file = "tk.txt")
 
-APP_NAME = "Netflix"
+APP_NAME = "YouTube"
 
 #test with poweron and home
 tvr.shortcuts().power()
