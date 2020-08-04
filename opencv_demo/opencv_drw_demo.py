@@ -20,8 +20,10 @@ cv.ellipse(img,(253,253),(100,50),270,0,360,(157,157,157),3)
 #parameters are image name, text to be shown, font, font scale, color, thickness, line type
 cv.putText(img,'RSK_OpenCV',(50,50),cv.FONT_HERSHEY_SIMPLEX,2,(255,255,255),5,cv.LINE_AA)
 
+#show and save the image
 cv.imshow("Drawing", img)
 cv.imwrite("resources/Drawing.png",img)
 
+#wait for key stroke and destroy all windows
 cv.waitKey(0)
 cv.destroyAllWindows()
