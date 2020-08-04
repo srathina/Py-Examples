@@ -3,6 +3,7 @@ import cv2 as cv
 #call the video capture method
 cap = cv.VideoCapture(0)
 
+
 #define codec
 fourcc = cv.VideoWriter_fourcc(*'DIVX')
 #Provision the video writer and the parameters are output file name, codec details, fps, frame size
@@ -29,10 +30,6 @@ while True:
 
     if cv.waitKey(1) == ord('q'):
         break
-
-
-
-
 
 #release and destroy all the resources and windows
 cap.release()
