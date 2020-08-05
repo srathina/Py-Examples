@@ -28,7 +28,9 @@ inv_mask = cv.bitwise_not(mask)
 img1bg = cv.bitwise_and(roi,roi,mask=inv_mask)
 img2fg = cv.bitwise_and(img2,img2,mask=mask)
 
+
 dst = cv.add(img1bg,img2fg)
+
 img1[0:rows, 0:cols] = dst
 
 cv.imshow('Blend', img1)
