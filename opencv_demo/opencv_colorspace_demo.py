@@ -28,8 +28,8 @@ inv_mask = cv.bitwise_not(mask)
 
 res = cv.bitwise_and(frame,frame,mask = mask)
 
-cv.imshow('frame', frame)
-cv.imshow('result' ,res)
+imgstack = np.concatenate((frame,res),axis = 1)
+cv.imshow('Image',imgstack)
 
 
 cv.waitKey(0)
