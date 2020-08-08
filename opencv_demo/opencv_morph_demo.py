@@ -5,7 +5,7 @@ img = cv.imread('resources/rsk_resize.jpg')
 # img = cv.cvtColor(img,cv.COLOR_BGR2GRAY)
 
 # kernel = np.ones((5,5),np.uint8)
-kernel = cv.getStructuringElement(cv.MORPH_RECT,(5,5))
+kernel = cv.getStructuringElement(cv.MORPH_RECT,(7,7))
 
 # erosion, dilation, opening(erosion followed by dilation, closing(dilation followed by erosion))
 # gradient - differece between erosion and dilation. so outline of image will be shown
