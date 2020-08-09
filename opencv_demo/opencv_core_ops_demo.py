@@ -30,8 +30,8 @@ b = img[:,:,0]
 cv.imwrite('resources/mod_roi.jpg',img)
 
 #make border for the image
-color = [0,255,0]
-constant = cv.copyMakeBorder(img,50,50,50,50,cv.BORDER_CONSTANT ,value=color)
+color = [0,255,255]
+constant = cv.copyMakeBorder(img,5,5,5,5,cv.BORDER_CONSTANT ,value=color)
 
 cv.imshow('border',constant)
 
